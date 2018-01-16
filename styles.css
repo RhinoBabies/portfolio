@@ -1,21 +1,20 @@
 /* CSS for ePortfolio Site */
 
 body {
-  background: #9ccfe2;
-  font-family: Calibri, Optima, Arial, san-serif;
-  margin: 20px;
-  width: 100%;
-  position: relative;
+	background: #9ccfe2;
+	font-family: Calibri, Optima, Arial, san-serif;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+	position: relative;
 }
 
 /* Navigation */
 
 .navigation {
   background-color: #4f7793;
-  position: absolute;
-  margin: auto;
-  text-align: center;
-  z-index: 3;
   padding: 30px;
 }
 
