@@ -6,32 +6,52 @@
 		<link rel="stylesheet" href="styles.css" type="text/css">
 	</head>
 
-	<body>
+	<body class="grid">
+		<div class="bg"></div>
 		<nav class="navigation">
-			<h2><a href="./index.html">Home</a> - <a href="./about.html">About</a> - <a href="./create.html">Create</a> - <a href="./learn.html">Learn</a> - <a href="./capture.html">Capture</a></h2>
+			<h2><a href="./index.html">Home</a> | <a class="current" href="./about.html">About</a> | <a href="./create.html">Create</a> | <a href="./learn.html">Learn</a> | <a href="./capture.html">Capture</a></h2>
 		</nav>
 
-		<h1>So, who is this guy?</h1>
+		<main>
+			<div class="article">
+				<h1>So, who is this guy?</h1>
 
-		<img src="./images/portrait-crop.png" width=100 />
-		<ul>
-			<li>University</li>
-			<li>Military Experience</li>
-			<li>Cognitive Interests (What do I want to learn more about?)</li>
-			<li>Hobbies</li>
-			<ul>
-				<li>Travel</li>
-				<li>Games</li>
-			</ul>
-		</ul>
+				<img class="mug" src="./images/portrait-crop.png" alt="Justin's Mug" width=100 />
+				<ul>
+					<li>University</li>
+					<li>Military Experience</li>
+					<li>Cognitive Interests (What do I want to learn more about?)</li>
+					<li>Hobbies</li>
+					<ul>
+						<li>Travel</li>
+						<li>Games</li>
+					</ul>
+				</ul>
+			</div>
+		</main>
 		
-		<h2>Social Media Plugs</h2>
-			<ul>
-				<li class="links">Gmail</li>
-				<li class="links">Linkedin</li>
-				<li class="links">GitHub</li>
-				<li class="links">Instagram</li>
-			</ul>
+		<footer>
+			<a href="https://github.com/RhinoBabies">
+				<div class="icon">
+					<img src="images/social/github-light.png" target="_blank" alt="GitHub" />
+				</div>
+			</a>
+			<a href="https://www.linkedin.com/in/jmvessey/">
+				<div class="icon">
+					<img src="images/social/linkedin.png" target="_blank" alt="LinkedIn" />
+				</div>
+			</a>
+			<a href="https://www.instagram.com/rhinobabies/">
+				<div class="icon">
+					<img src="images/social/instagram.png" target="_blank" alt="Instagram" />
+				</div>
+			</a>
+			<a href="mailto:jmvessey@gmail.com?subject=Let's%20chat!">
+				<div class="icon">
+					<img src="images/social/email.png" target="_blank" alt="Email" />
+				</div>
+			</a>
+		</footer>
 	</body>
 
 </html>

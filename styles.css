@@ -12,9 +12,16 @@ body {
 	min-height: 100vh;
 }
 
+body, main, nav, footer {
+	min-width: 315px;
+}
+
 .grid {
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-rows: 10% 1fr 20%;
 	grid-template-rows: 10% 1fr 20%;
+	-ms-grid-columns: 20% 1fr 1fr 20%;
 	grid-template-columns: 20% 1fr 1fr 20%;
 }
 
@@ -27,23 +34,25 @@ body {
 }
 
 .navigation {
-  grid-area: nav;
-  grid-area: 1 / 2 / 2 / 4;
-  background-color: #4f7793;
-  padding: 30px;
-  width: auto;
-  text-align: center;
-  border: 3px solid #253946;
+	grid-area: nav;
+	grid-area: 1 / 2 / 2 / 4;
+	background-color: #4f7793;
+	padding: 30px;
+	width: auto;
+	text-align: center;
+	border: 3px solid #253946;
+	box-shadow: 0 10px 10px -2px hsla(214,37%,27%,.5);
 }
 
 .navigation h2, a {
-  color: #ffd772;
-  text-decoration: none;
+	color: #ffd772;
+	text-decoration: none;
+	-webkit-transition: all .5s;
 	transition: all .5s;
 }
 
 .navigation a:hover, a.current {
-  color: #FFF;
+	color: #FFF;
 }
 
 main {
@@ -54,17 +63,39 @@ main {
 	padding: 20px;
 }
 
+.article {
+	margin: 10px;
+}
+
+.article h1 {
+	color: hsla(0,0%,33%,1.00);
+	text-shadow: 2px 2px 1px lightslategray;
+}
+
+.article h1, h2, h3 {
+	margin-bottom: .5em;
+}
+
+.article p {
+	margin: 1.5em 0;
+}
+
 ul {
-  padding: 0px 30px;
+	padding: 0px 30px;
 }
 
 li {
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  margin: 0;
-  padding: 10px;
-  text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin: 0;
+	padding: 10px;
+	text-transform: uppercase;
+	color: hsla(0,0%,21%,1.00);
+}
+
+.mug {
+	border: 3px outset slategray;
 }
 
 
@@ -73,12 +104,14 @@ li {
 footer {
 	grid-area: footer;
 	grid-area: 3 / 2 / 4 / 4;
+	-ms-flex-line-pack: end;
 	align-content: flex-end;
 	color: white;
 	background-color: #375367;
 	border: medium solid #253946;
 	text-align: center;
 	padding: 20px;
+	box-shadow: 0 -30px 30px -5px hsla(214,37%,27%,0.5);
 }
 
 .icon {
@@ -88,6 +121,7 @@ footer {
 	border-radius: 10px;
 	padding: 0;
 	margin: 5px;
+	-webkit-transition: background-color .5s;
 	transition: background-color .5s;
 }
 
@@ -107,5 +141,7 @@ footer {
 
 .icon img:active {
 	opacity: .5;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	-webkit-transform: translate(2px, 2px);
 	transform: translate(2px, 2px);
 }
